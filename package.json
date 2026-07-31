@@ -20,7 +20,7 @@
     "eta": "^1.12.3",
     "express": "^4.18.1",
     "express-fileupload": "^1.4.0",
-    "express-rate-limit": "^6.5.2",
+    "express-rate-limit": "^6.5.0",
     "express-session": "^1.17.3",
     "form-data": "^4.0.0",
     "fs-extra": "^11.1.0",
@@ -88,17 +88,3 @@
     "terser": "^5.15.0"
   }
 }
-
-Après avoir remplacé ton ancien "package.json", exécute simplement :
-
-npm install
-
-Puis relance le bot avec :
-
-npm start
-
-La seule modification importante est l'ajout de :
-
-"request-promise": "^4.2.6"
-
-Cela corrige l'erreur "Cannot find module 'request-promise'". Le "locked: true" de Facebook est, lui, un problème séparé.
